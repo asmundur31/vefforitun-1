@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="is">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+
+<body>
+    <h1> Form </h1>
+    <form method="get" action=".">
+        <fieldset>
+            <legend>Notandi</legend>
+            <div class="field">
+                <label for="notandanafn">Notandanafn:</label>
+                <input type="text" name="notandanafn" id="notandanafn" required>
+            </div>
+            <div class="field">
+                <label for="netfang">Netfang:</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="field">
+                <label for="lykilorð">Lykilorð:</label>
+                <input type="password" name="lykilorð" id="lykilorð" required>
+            </div>
+            <div class="field">
+                <label for="lykilorð aftur">Lykilorð aftur:</label>
+                <input type="password" name="lykilorð aftur" id="lykilorð aftur" required>
+                Lykilorð verða að vera eins
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Spurningar</legend>
+            <div>
+                Kyn:
+            </div>
+            <label>
+                <input type="radio" name="kyn" value="kk">
+                Karl
+            </label>
+            <label>
+                <input type="radio" name="kyn" value="kvk">
+                Kona
+            </label>
+            <label>
+                <input type="radio" name="kyn" value="annað">
+                Annað
+            </label>
+            <div>
+                Aldur:
+                <select name="aldur">
+                    <option disabled selected value>-Vinsamlegast veljið-</option>
+                    <option value="börn">Yngri en 13 ára</option>
+                    <option value="ungmenni">13-20 ára</option>
+                    <option value="fullorðinn">21-65 ára</option>
+                    <option value="eldriborgari">Eldri en 65 ára</option>
+                </select>
+            </div>
+            <div>
+                <label>
+                    <input type="checkbox">
+                    Senda afrit af notendaupplýsingum á netfang.
+                </label>
+            </div>
+            <div>
+                Athugasemdir
+                <textarea id="athugasemdir" cols="30" rows="5"></textarea>
+            </div>
+        </fieldset>
+    </form>
+    <div>
+        <input type="submit" value="Senda">
+    </div>
+    <hr>
+    <nav>
+        <ul>
+            <li> <a href="../index.html"> Forsíða </a></li>
+            <li> <a href="form.html"> <b>Form</b> </a> </li>
+            <li> <a href="tafla.html"> Tafla </a> </li>
+            <li> <a href="texti.html"> Texti </a> </li>
+        </ul>
+    </nav>
+</body>
+
+</html>
